@@ -1,0 +1,22 @@
+//! global styles 
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300&family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+//setting family 
+$family-sans-serif:"Jost" ,sans-serif;
+
+// Updating Bulma component variables
+$control-boarder-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Global HTMl styles//
+
+html , body {
+    height: 100%;
+
+}
+
+html{
+    background-color: rgb(230, 229, 229);
+}
