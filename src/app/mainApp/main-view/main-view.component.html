@@ -1,18 +1,23 @@
 <div class="root">
+    <!-- columns HTML -->
+
     <div class="board">
         <div class="board-wrapper">
 
-            <div class="board-columns">
+            <div class="board-columns" *ngFor="let EnvironmentGroup of environments "> 
                 <div class="board-column">
 
                     <div class="column-title">
-                            Test
+                        {{EnvironmentGroup.description}}
+                        
                     </div>
 
-                    <div class="task-container">
-                        <!-- <div class="task">
+                    <div class="task-container ">
+
+                        <div class="task">
                             
-                        </div> -->
+                        </div>
+                       
                     </div>
                 </div>
             </div>
