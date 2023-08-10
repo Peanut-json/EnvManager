@@ -22,8 +22,8 @@ export class EnvironmentService {
     return this.http.post<Environment>(this.baseApiUrl + '/api/environments', addEnvironmentRequest ) //* Post Responce 
    }
 
-   getEnvironment(id: string , updateEnvironmentRequest: Environment): Observable<Environment> {
-    return this.http.get<Environment>(this.baseApiUrl + '/api/environments' + id) //* GET environment for responce 
+   getEnvironment(id: string): Observable<Environment> {
+    return this.http.get<Environment>(this.baseApiUrl + '/api/environments' + id  ) //* GET environment for responce 
    }
 
    updateEnvironment(id: string, updateEnvironmentRequest: Environment): Observable<Environment> {
