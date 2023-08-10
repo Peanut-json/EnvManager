@@ -22,7 +22,14 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/@angular",
+      "node_modules/@angular/common/http"
+    ] //* issue with HTTP Client finding the right module to import , {FIXED}
+    
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
