@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainViewComponent } from './mainApp/main-view/main-view.component';
 import { AddEnvironmentComponent } from './components/add-environment/add-environment.component';
-import { EditDeleteEnvironmentComponent } from './components/edit-delete-environment/edit-delete-environment.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainViewComponent,
     AddEnvironmentComponent,
-    EditDeleteEnvironmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DragDropModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
