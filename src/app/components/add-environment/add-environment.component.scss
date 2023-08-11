@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
     min-height: 50vh;
     width: 500px;
     padding: 0 15px;
@@ -13,5 +14,9 @@
 .label-name {
     display: flex;
     justify-content: center;
+}
+
+.input {
+    width: 400px;
 }
 

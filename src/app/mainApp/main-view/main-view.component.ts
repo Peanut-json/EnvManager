@@ -16,12 +16,7 @@ export class MainViewComponent implements OnInit {
   environments:EnvStatusChange [] = [{
     statusId: 0,
     description: "Avalible Enviroments",
-    environments: [{
-      id: "pokdfnpoiacnm" , 
-      status: 0 , 
-      title: "TEST" , 
-      name: "TEST" 
-    }]
+    environments: []
   },
   {
     statusId: 1,

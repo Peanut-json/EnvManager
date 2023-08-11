@@ -2,7 +2,7 @@
     <!-- columns HTML -->
 
     <div class="board">
-        <div class="board-wrapper" dkDropListGroup >
+        <div class="board-wrapper" cdkDropListGroup >
 
             <div class="board-columns" *ngFor="let environmentGroup of environments"> 
                 <div class="board-column">
@@ -17,9 +17,11 @@
                     [cdkDropListData]="environmentGroup">
 
                         <div class="task" *ngFor="let environment of environmentGroup.environments" cdkDrag [cdkDragData]="environment" >
-                            {{environment.title}}
-                            {{environment.name}}
-                            <a class="button is-small button is-primary is-inverted" [routerLink]="">edit</a>
+                            <div class="title">{{environment.title}}</div>
+
+                            <div class="name">{{environment.name}}</div>
+                            
+                            <a class="button is-small button is-primary is-inverted" [routerLink]="['/Environments' , 'edit' , environment.id]">edit</a>
                         </div>
                        
                     </div>

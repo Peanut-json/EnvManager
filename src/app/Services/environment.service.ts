@@ -35,7 +35,7 @@ export class EnvironmentService {
    }
 
    changeStatus(id: string, changeStatus: number): Observable<Environment> {
-    return this.http.patch<Environment>(`${this.baseAPIUrl}/api/employees/${id}/status`, changeStatus)
+    return this.http.patch<Environment>(`${this.baseAPIUrl}/api/environment/${id}/status`, changeStatus)
    }
 
 
