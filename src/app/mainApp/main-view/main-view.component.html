@@ -16,7 +16,7 @@
                     (cdkDropListDropped)="drop($event)"
                     [cdkDropListData]="environmentGroup">
 
-                        <div class="task" *ngFor="let environment of environmentGroup.environments" cdkDrag [cdkDragData]="environments" >
+                        <div class="task" *ngFor="let environment of environmentGroup.environments" cdkDrag [cdkDragData]="environment" >
                             {{environment.title}}
                             {{environment.name}}
                             <a class="button is-small button is-primary is-inverted" [routerLink]="">edit</a>

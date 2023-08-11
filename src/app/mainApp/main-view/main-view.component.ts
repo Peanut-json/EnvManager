@@ -16,7 +16,12 @@ export class MainViewComponent implements OnInit {
   environments:EnvStatusChange [] = [{
     statusId: 0,
     description: "Avalible Enviroments",
-    environments: []
+    environments: [{
+      id: "pokdfnpoiacnm" , 
+      status: 0 , 
+      title: "TEST" , 
+      name: "TEST" 
+    }]
   },
   {
     statusId: 1,
@@ -49,12 +54,12 @@ export class MainViewComponent implements OnInit {
     } else {
 
       //* Here is how you get the environment
-      let envId = event.item.data.id;
+      let environmentId = event.item.data.id;
 
       //* And the Status ID
       let statusId = event.container.data.statusId;
 
-      this.environmentService.changeStatus(envId, statusId)
+      this.environmentService.changeStatus(environmentId, statusId)
         .subscribe();
 
       transferArrayItem(
@@ -69,12 +74,12 @@ export class MainViewComponent implements OnInit {
 
 export function splitEnvironments(environment: Pick<Environment, "status">[], statuses: (Pick<EnvStatusChange, "statusId"> & { environments: { status: number }[] })[]) {
 
-  for (let Environments of environment) {  // **of*** gives values  **in** gives keys
+  for (let Environment of environment) {  // **of*** gives values  **in** gives keys
 
     for (let employeeStatus of statuses) {
 
-      if (Environments.status === employeeStatus.statusId) {
-        employeeStatus.environments.push(Environments);
+      if (Environment.status === employeeStatus.statusId) {
+        employeeStatus.environments.push(Environment);
       }
     }
   }

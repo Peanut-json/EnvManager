@@ -23,19 +23,19 @@ export class EnvironmentService {
    }
 
    getEnvironment(id: string): Observable<Environment> {
-    return this.http.get<Environment>(this.baseAPIUrl + '/api/environment' + id  ) //* GET environment for responce 
+    return this.http.get<Environment>(this.baseAPIUrl + '/api/environment/' + id  ) //* GET environment for responce 
    }
 
    updateEnvironment(id: string, updateEnvironmentRequest: Environment): Observable<Environment> {
-    return this.http.put<Environment>(this.baseAPIUrl + '/api/environment' + id , updateEnvironmentRequest) //* update Responce 
+    return this.http.put<Environment>(this.baseAPIUrl + '/api/environment/' + id , updateEnvironmentRequest) //* update Responce 
    }
 
    deleteEnvironment(id: string): Observable<Environment> {
-    return this.http.delete<Environment>(this.baseAPIUrl + '/api/environment' + id) //* Delete Responce 
+    return this.http.delete<Environment>(this.baseAPIUrl + '/api/environment/' + id) //* Delete Responce 
    }
 
-   changeStatus(id: string , changeStatus: number): Observable<Environment> {
-    return this.http.patch<Environment>(`${this.baseAPIUrl}/api/environment/${id}/status`, changeStatus)//* chnage status responce 
+   changeStatus(id: string, changeStatus: number): Observable<Environment> {
+    return this.http.patch<Environment>(`${this.baseAPIUrl}/api/employees/${id}/status`, changeStatus)
    }
 
 
