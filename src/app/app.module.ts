@@ -9,12 +9,15 @@ import { AddEnvironmentComponent } from './components/add-environment/add-enviro
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { EditDeleteEnvironmentComponent } from './components/edit-delete-environment/edit-delete-environment.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MainViewComponent,
     AddEnvironmentComponent,
+    EditDeleteEnvironmentComponent
   ],
   imports: [
     BrowserModule,
