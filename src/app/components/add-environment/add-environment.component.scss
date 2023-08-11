@@ -1,0 +1,17 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 500px;
+    padding: 0 15px;
+    background: rgba(222, 222, 222, 0.75);
+}
+
+
+.label-name {
+    display: flex;
+    justify-content: center;
+}
+

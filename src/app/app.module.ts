@@ -12,12 +12,14 @@ import { FormsModule } from '@angular/forms';
 import { EditDeleteEnvironmentComponent } from './components/edit-delete-environment/edit-delete-environment.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     MainViewComponent,
     AddEnvironmentComponent,
-    EditDeleteEnvironmentComponent
+    EditDeleteEnvironmentComponent,
+    
   ],
   imports: [
     BrowserModule,

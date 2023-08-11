@@ -1,1 +1,32 @@
-<p>add-environment works!</p>
+
+ <!--* adding subject fields for new employees-->
+<div class="title is-spaced"></div> <!-- to give spce at top -->
+
+<form class="box" #form ="ngForm" (ngSubmit)=" addEnvironment()">
+
+    <div class="field">
+        <label class="label-name ">Title</label>
+        <div class="control">
+          <input class="input is-rounded" type="text" name="name" placeholder=" WinWire , UK Dev , UK Test , Product Owners"
+          [(ngModel)]="addEnvironmentRequest.title" id="title">
+        </div>
+      
+      </div>
+
+      <div class="field">
+        <label class="label-name ">Name</label>
+        <div class="control">
+          <input class="input is-rounded" type="text" name="name" placeholder="Name of the Environment"
+          [(ngModel)]="addEnvironmentRequest.name" id="name">
+        </div>
+      
+      </div>
+    
+    <div class="field is-grouped">
+    <div class="control">
+      <button class="button" type="submit">Submit</button>
+    </div>
+
+</div>
+</form> 
+
