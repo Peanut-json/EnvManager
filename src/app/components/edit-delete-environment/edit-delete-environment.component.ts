@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { EnvironmentService } from 'src/app/Services/environment.service';
 import { Environment } from 'src/app/models/environment.model';
 
